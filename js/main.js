@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     passwordInput.type = isPassword ? "text" : "password";
 
     togglePassword.src = isPassword
-      ? "../images/hide-pass.png"
-      : "../images/show-pass.png";
+      ? "images/hide-pass.png"
+      : "images/show-pass.png";
   });
 });
