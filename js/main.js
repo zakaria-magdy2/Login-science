@@ -14,8 +14,8 @@ togglePassword.addEventListener("click", () => {
   setTimeout(() => {
     // غير الصورة بناءً على الحالة
     togglePassword.src = isPassword
-      ? "https://zakaria-magdy2.github.io/Login-science/images/hide-pass.png"
-      : "https://zakaria-magdy2.github.io/Login-science/images/show-pass.png";
+      ? "/Login-science/images/hide-pass.png"
+      : "/Login-science/images/show-pass.png";
 
     // بعد تغيير الصورة، أرجّع الشفافية
     togglePassword.style.opacity = 1;
