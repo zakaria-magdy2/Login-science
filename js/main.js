@@ -17,7 +17,7 @@ window.addEventListener("load", function () {
   const loader = document.querySelector(".loader");
   if (loader) {
     setTimeout(() => {
-      loader.style.display = "none";
-    }, 3000); // ← 3 ثواني (3000 مللي ثانية)
+      loader.classList.add("hide"); 
+    }, 1000); 
   }
 });

@@ -45,6 +45,9 @@ body {
   flex-direction: column;
   z-index: 1;
   margin: 20px;
+  animation: slideDownFade 0.8s ease forwards;
+  opacity: 0;
+  animation: slideDownFade 0.8s ease 1.2s forwards;
 }
 .card .head .logo img {
   width: 120px;
@@ -160,6 +163,21 @@ input:checked + .switch::before {
 }
 /* End Login */
 
+
+
+
+
+/* animation card  */
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* Loader  */
 .loader {
   position: fixed;
@@ -172,6 +190,14 @@ input:checked + .switch::before {
   justify-content: center;
   z-index: 9999;
   overflow: hidden;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.loader.hide {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .loader::after {
@@ -213,7 +239,6 @@ input:checked + .switch::before {
   }
 }
 
-/* نقاط متغيرة */
 .dots::after {
   content: "";
   animation: dots 1.2s steps(4, end) infinite;
