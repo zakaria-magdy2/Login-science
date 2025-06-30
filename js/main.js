@@ -4,13 +4,24 @@ const togglePassword = document.getElementById("togglePassword");
 
 togglePassword.addEventListener("click", () => {
   const isPassword = passwordInput.type === "password";
+
+  // غير نوع الحقل
   passwordInput.type = isPassword ? "text" : "password";
 
-  
-  togglePassword.src = isPassword
-    ? "../images/hide-pass.png"
-    : "../images/show-pass.png";
+  // اعمل تأثير سلس على تغيير الصورة
+  togglePassword.style.opacity = 0;
+
+  setTimeout(() => {
+    // غير الصورة بناءً على الحالة
+    togglePassword.src = isPassword
+      ? "images/hide-pass.png"
+      : "images/show-pass.png";
+
+    // بعد تغيير الصورة، أرجّع الشفافية
+    togglePassword.style.opacity = 1;
+  }, 150);
 });
+
 // End Login Page
 
 // Loader Animation
