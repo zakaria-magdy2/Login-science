@@ -33,7 +33,7 @@ body {
   left: -50px;
   width: calc(100% + 100px);
   height: calc(100% + 100px);
-  background-image: url("../images/login-background.jpg");
+  background-image: url("../images/login-background.png");
   background-size: cover;
   background-position: center;
   filter: blur(0px);
@@ -186,7 +186,7 @@ input:checked + .switch::before {
 .loader {
   position: fixed;
   inset: 0;
-  background-image: url(../images/login-background.jpg);
+  background-image: url(../images/login-background.png);
   background-size: cover;
   background-position: center;
   display: flex;
