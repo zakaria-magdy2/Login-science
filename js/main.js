@@ -14,8 +14,8 @@ togglePassword.addEventListener("click", () => {
   setTimeout(() => {
     // غير الصورة بناءً على الحالة
   togglePassword.src = isPassword
-   ? "images/hide-pass.png"
-   : "images/show-pass.png";
+   ? "../images/hide-pass.png"
+   : "../images/show-pass.png";
 
 
 
