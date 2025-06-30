@@ -6,7 +6,7 @@ togglePassword.addEventListener("click", () => {
   const isPassword = passwordInput.type === "password";
   passwordInput.type = isPassword ? "text" : "password";
   
- togglePassword.src = isPassword ? "images/hide-pass.svg" : "images/show-pass.png";
+ togglePassword.src = isPassword ? "images/hide-pass.png" : "images/show-pass.png";
 });
 // End Login Page
 
