@@ -6,10 +6,10 @@ togglePassword.addEventListener("click", () => {
   const isPassword = passwordInput.type === "password";
   passwordInput.type = isPassword ? "text" : "password";
 
-  // ❗ استخدم مسار صحيح متوافق مع GitHub Pages
+  
   togglePassword.src = isPassword
-    ? "/Login-science/images/hide-pass.png"
-    : "/Login-science/images/show-pass.png";
+    ? "../images/hide-pass.png"
+    : "../images/show-pass.png";
 });
 // End Login Page
 

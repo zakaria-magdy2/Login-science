@@ -5,6 +5,9 @@
   margin: 0;
   padding: 0;
 }
+html, body {
+  overflow-x: hidden;
+}
 body {
   font-family: "Abhaya Libre", serif;
   font-weight: 400;
@@ -54,6 +57,7 @@ body {
   height: 120px;
   margin: 14px 14px 0 0;
 }
+
 .card .head h2 {
   color: #002b88;
   font-weight: bold;
@@ -162,10 +166,6 @@ input:checked + .switch::before {
   background-color: #021b51;
 }
 /* End Login */
-
-
-
-
 
 /* animation card  */
 @keyframes slideDownFade {
