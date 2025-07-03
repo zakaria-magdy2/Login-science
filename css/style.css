@@ -153,7 +153,9 @@ input:checked + .switch {
 input:checked + .switch::before {
   transform: translateX(20px);
 }
-.card form input[type="submit"] {
+
+/* لما ارفع البروجيكت ارجعهم تاني  */
+/* .card form input[type="submit"] {
   width: 80%;
   margin: auto;
   padding: 15px;
@@ -168,7 +170,28 @@ input:checked + .switch::before {
 }
 .card form input[type="submit"]:hover {
   background-color: #021b51;
+} */
+
+.card form a.submit-btn {
+  display: block; /* علشان ياخد مساحة زي الزرار */
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding: 15px;
+  border-radius: 18px;
+  background-color: #002b88;
+  color: #ffffff;
+  text-decoration: none; /* يشيل خط الرابط */
+  font-size: 24px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
 }
+
+.card form a.submit-btn:hover {
+  background-color: #021b51;
+}
+
 /* End Login */
 
 /* animation card  */
@@ -264,3 +287,147 @@ input:checked + .switch::before {
     content: "";
   }
 }
+
+/* Start Select Section Page  */
+.container-select-sec {
+  background-image: url(../images/select-section-background.png);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-select-sec .header {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(26, 29, 34, 0.7);
+}
+.container-select-sec .header ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  color: white;
+  font-size: 24px;
+}
+.container-select-sec .header ul li {
+  padding: 20px 30px;
+  align-items: center;
+}
+.container-select-sec .header ul li:not(li.logo) {
+  border-left: 1px solid white;
+}
+.container-select-sec .header ul li.logo {
+  letter-spacing: 9.9px;
+  display: flex;
+}
+.container-select-sec .header ul li.logo span {
+  font-size: 40px;
+  padding-left: 10px;
+  letter-spacing: 12.5px;
+}
+
+/* Drag List  */
+.dragList {
+  margin-top: 120px;
+  padding: 10px 30px 5px 30px;
+  position: relative;
+  width: fit-content;
+  background-color: white;
+  border-radius: 18px;
+  text-align: right;
+}
+.dragList p {
+  font-size: 24px;
+  margin-right: 20px;
+}
+.dragList .control {
+  position: absolute;
+  display: flex;
+  top: -25px;
+  left: 0.5rem;
+  color: #00f008;
+}
+ul#sortableList {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+}
+
+ul#sortableList li {
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: grab;
+  border: 1px solid #ccc;
+  transition: background 0.3s;
+  border: 1 px solid #e4e4e4;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: end;
+}
+ul#sortableList li:hover {
+  background-color: #e4e4e4;
+  border: 1px solid rgb(63, 63, 212);
+}
+ul#sortableList li img {
+  margin-left: 10px;
+  width: 10px;
+  height: 18px;
+}
+ul#sortableList li.dragging {
+  opacity: 0.5;
+}
+.container-select-sec .submit_sections {
+  padding: 10px 190px;
+  font-size: 24px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background: linear-gradient(to right, #21a3ff, #146299);
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.container-select-sec .submit_sections:hover {
+  background: linear-gradient(to right, #ffd900, #a80a0a);
+}
+
+/* responsive */
+@media (max-width: 920px) {
+  .container-select-sec .header ul {
+    font-size: 17px;
+  }
+  .container-select-sec .header ul li.logo {
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .container-select-sec .header ul li.logo span {
+    letter-spacing: 5px;
+    font-size: 25px;
+  }
+  .container-select-sec .header ul li.logo img {
+    width: 70px;
+    height: 70px;
+  }
+  .container-select-sec .header ul li {
+    padding: 5px 10px;
+  }
+  .dragList {
+    width: 380px;
+  }
+  .container-select-sec .submit_sections {
+    padding: 10px 100px;
+  }
+  .container-select-sec .header ul li.logo {
+    flex-direction: column;
+  }
+}
+/* End Select Section Page  */
