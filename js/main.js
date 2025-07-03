@@ -73,4 +73,13 @@ window.addEventListener("DOMContentLoaded", function () {
       ).element;
     }
   }
+  // SortableJS initialization
+const el = document.getElementById("sortable-list");
+
+if (el) {
+  new Sortable(el, {
+    animation: 150, // حركة سلسة
+    ghostClass: 'ghost', // كلاس مؤقت للعنصر أثناء السحب
+  });
+}
 });
