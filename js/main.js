@@ -12,9 +12,9 @@ window.addEventListener("DOMContentLoaded", function () {
       togglePassword.style.opacity = 0;
 
       setTimeout(() => {
-      togglePassword.src = isPassword
-       ? "/Login-science/images/hide-pass.png"
-       : "/Login-science/images/show-pass.png";
+        togglePassword.src = isPassword
+          ? "images/hide-pass.png"
+          : "images/show-pass.png";
 
         togglePassword.style.opacity = 1;
       }, 150);
@@ -73,13 +73,4 @@ window.addEventListener("DOMContentLoaded", function () {
       ).element;
     }
   }
-  // SortableJS initialization
-const el = document.getElementById("sortable-list");
-
-if (el) {
-  new Sortable(el, {
-    animation: 150, // حركة سلسة
-    ghostClass: 'ghost', // كلاس مؤقت للعنصر أثناء السحب
-  });
-}
 });
