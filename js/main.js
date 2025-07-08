@@ -30,7 +30,9 @@ window.addEventListener("DOMContentLoaded", function () {
   }
 
   // Start Select Section Page
+});
 
+document.addEventListener("DOMContentLoaded", () => {
   const list = document.getElementById("sortableList");
   let draggedItem = null;
 
@@ -41,7 +43,7 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  list.addEventListener("dragend", (e) => {
+  list.addEventListener("dragend", () => {
     if (draggedItem) {
       draggedItem.classList.remove("dragging");
       draggedItem = null;
@@ -51,7 +53,7 @@ window.addEventListener("DOMContentLoaded", function () {
   list.addEventListener("dragover", (e) => {
     e.preventDefault();
     const afterElement = getDragAfterElement(list, e.clientY);
-    if (afterElement == null) {
+    if (!afterElement) {
       list.appendChild(draggedItem);
     } else {
       list.insertBefore(draggedItem, afterElement);
@@ -75,12 +77,5 @@ window.addEventListener("DOMContentLoaded", function () {
       },
       { offset: Number.NEGATIVE_INFINITY }
     ).element;
-  }
-
-  function submitList() {
-    const items = [...document.querySelectorAll("#sortableList li")].map(
-      (li) => li.textContent
-    );
-    alert("Current order:\n" + items.join("\n"));
   }
 });
