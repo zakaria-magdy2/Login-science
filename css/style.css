@@ -379,7 +379,6 @@ ul#sortableList li span {
   justify-content: center;
   font-size: 30px;
   margin-left: 10px;
-  padding-top: 4px;
 }
 ul#sortableList li:hover {
   background-color: #e4e4e4;
@@ -401,7 +400,8 @@ ul#sortableList li:hover {
   background: linear-gradient(to right, #ffd900, #a80a0a);
 }
 
-/* responsive */@media (max-width: 920px) {
+/* responsive */
+/* @media (max-width: 920px) {
   .container-select-sec .header ul {
     font-size: 17px;
     flex-wrap: wrap;
@@ -474,6 +474,6 @@ ul#sortableList li:hover {
     padding: 10px 40px;
     font-size: 18px;
   }
-}
+} */
 
 /* End Select Section Page  */
