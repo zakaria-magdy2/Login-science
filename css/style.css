@@ -400,80 +400,35 @@ ul#sortableList li:hover {
   background: linear-gradient(to right, #ffd900, #a80a0a);
 }
 
-/* responsive */
-/* @media (max-width: 920px) {
+/* Responsive  */
+@media (max-width: 920px) {
   .container-select-sec .header ul {
     font-size: 17px;
-    flex-wrap: wrap;
   }
-
   .container-select-sec .header ul li.logo {
-    flex-direction: column;
     letter-spacing: 1px;
     font-size: 20px;
     font-weight: bold;
   }
-
   .container-select-sec .header ul li.logo span {
     letter-spacing: 5px;
     font-size: 25px;
   }
-
   .container-select-sec .header ul li.logo img {
     width: 70px;
     height: 70px;
   }
-
   .container-select-sec .header ul li {
     padding: 5px 10px;
   }
-
   .dragList {
-    width: 90%;
-    max-width: 420px;
+    width: 380px;
   }
-
-  .dragList p {
-    font-size: 20px;
-    margin-right: 10px;
-  }
-
-  ul#sortableList li {
-    font-size: 18px;
-    padding: 8px 10px;
-    margin: 8px 0;
-  }
-
-  ul#sortableList li span {
-    font-size: 24px;
-    margin-left: 8px;
-  }
-
   .container-select-sec .submit_sections {
-    padding: 10px 60px;
-    font-size: 20px;
-    margin-bottom: 20px;
+    padding: 10px 100px;
+  }
+  .container-select-sec .header ul li.logo {
+    flex-direction: column;
   }
 }
-
-@media (max-width: 600px) {
-  .dragList p {
-    font-size: 18px;
-  }
-
-  ul#sortableList li {
-    font-size: 16px;
-    padding: 8px;
-  }
-
-  ul#sortableList li span {
-    font-size: 20px;
-  }
-
-  .container-select-sec .submit_sections {
-    padding: 10px 40px;
-    font-size: 18px;
-  }
-} */
-
 /* End Select Section Page  */
