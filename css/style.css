@@ -380,9 +380,6 @@ ul#sortableList li img {
   width: 10px;
   height: 18px;
 }
-ul#sortableList li.dragging {
-  opacity: 0.5;
-}
 .container-select-sec .submit_sections {
   padding: 10px 190px;
   font-size: 24px;
