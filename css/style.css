@@ -363,15 +363,15 @@ ul#sortableList li {
   padding: 0px 10px;
   margin: 10px 0;
   cursor: grab;
-  border: 1px solid #ccc;
-  transition: background 0.3s;
-  border: 1 px solid #e4e4e4;
+  border: 1px solid #e4e4e4; /* لاحظ إصلاح السطر */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
+  transition: background 0.3s;
 }
+
 ul#sortableList li span {
   display: flex;
   align-items: center;
@@ -379,6 +379,9 @@ ul#sortableList li span {
   font-size: 24px;
   width: 30px;
   height: 40px;
+  line-height: 1;
+  flex-shrink: 0;
+  padding: 0;
 }
 ul#sortableList li:hover {
   background-color: #e4e4e4;
