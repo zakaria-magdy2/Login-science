@@ -373,13 +373,12 @@ ul#sortableList li {
   align-items: center;
 }
 ul#sortableList li span {
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
-  margin-left: 10px;
-  padding-top: 4px;
+  font-size: 24px;
+  width: 30px;
+  height: 40px;
 }
 ul#sortableList li:hover {
   background-color: #e4e4e4;
@@ -431,5 +430,12 @@ ul#sortableList li:hover {
   .container-select-sec .header ul li.logo {
     flex-direction: column;
   }
+  .dragList {
+    margin-top: 160px;
+  }
+  /* ul#sortableList li {
+  padding: 0px 5px;
+  margin: 5px 0;
+} */
 }
 /* End Select Section Page  */
