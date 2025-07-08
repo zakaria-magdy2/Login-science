@@ -28,9 +28,9 @@ window.addEventListener("DOMContentLoaded", function () {
       loader.classList.add("hide");
     }, 1000);
   }
+});
 
   // Start Select Section Page
-});
 
 document.addEventListener("DOMContentLoaded", () => {
   const list = document.getElementById("sortableList");

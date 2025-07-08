@@ -371,6 +371,9 @@ ul#sortableList li {
   display: flex;
   justify-content: end;
 }
+ul#sortableList li img {
+  pointer-events: none;
+}
 ul#sortableList li:hover {
   background-color: #e4e4e4;
   border: 1px solid rgb(63, 63, 212);
