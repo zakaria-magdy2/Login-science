@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1024" />
+    <title>Select a section sciences</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-select-sec">
+      <div class="loader">
+        <p>L<span class="spinner"></span>ading<span class="dots"></span></p>
+      </div>
+      <div class="header">
+        <ul>
+          <li class="logo">
+            <img
+              src="images/science-logo.png"
+              width="93px"
+              height="89px"
+              alt="science logo"
+            />
+            <div>FACULTY OF <br /><span>SCIENCE</span></div>
+          </li>
+          <li>المجموعة : <span>علوم</span></li>
+          <li>الرقم القومي : 12345678912345</li>
+          <li>الاسم : ذكريا مجدي محمد</li>
+        </ul>
+      </div>
+
+      <div class="dragList">
+        <div class="control">
+          Update Flag:
+          <div class="state">Enabled</div>
+        </div>
+        <p>قم بسحب التخصصات وترتيبها حسب أولوياتك. الأعلى = الأكثر تفضيلا</p>
+        <ul id="sortableList" class="science-list">
+          <li draggable="true">الكيمياء<span>⋮⋮</span></li>
+          <li draggable="true">الفيزياء<span>⋮⋮</span></li>
+          <li draggable="true">فيزياء / الكيمياء <span>⋮⋮</span></li>
+          <li draggable="true">جيولوجيا <span>⋮⋮</span></li>
+          <li draggable="true">الكيمياء / الكيمياء الحيوي <span>⋮⋮</span></li>
+          <li draggable="true">فيزياء / بيولوجي<span>⋮⋮</span></li>
+          <li draggable="true">علم الحيوان <span>⋮⋮</span></li>
+          <li draggable="true"> النبات <span>⋮⋮</span></li>
+          <li draggable="true"> الميكروبيولوجي <span>⋮⋮</span></li>
+          <li draggable="true"> البيوتكنولوجي <span>⋮⋮</span></li>
+          <li draggable="true"> نبات / كيمياء <span>⋮⋮</span></li>
+          <li draggable="true">ميكروبيولوجي / كيمياء حيوي <span>⋮⋮</span></li>
+          <li draggable="true">فسيولوجي / كيمياء حيوي <span>⋮⋮</span></li>
+        </ul>
+      </div>
+      <button class="submit_sections" onclick="submitList()">Submit</button>
+    </div>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

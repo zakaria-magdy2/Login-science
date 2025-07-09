@@ -425,7 +425,7 @@ ul#sortableList li:hover {
     padding: 5px 10px;
   }
   .dragList {
-    width: 380px;
+    margin: 0 30px;
   }
   .container-select-sec .submit_sections {
     padding: 10px 100px;
@@ -436,9 +436,29 @@ ul#sortableList li:hover {
   .dragList {
     margin-top: 160px;
   }
-  /* ul#sortableList li {
-  padding: 0px 5px;
-  margin: 5px 0;
-} */
+}
+
+/* Select Section Science  */
+
+.science-list {
+  list-style: none;
+  max-height: 400px;
+  overflow-y: auto;
+}
+.science-list::-webkit-scrollbar {
+  width: 25px;
+}
+.science-list::-webkit-scrollbar-track {
+  background-color: #fafafa;
+  border-radius: 20px;
+}
+.science-list::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border-radius: 20px;
+  border-top: 10px solid #fafafa ;
+  border-left: 8px solid #fafafa ;
+  border-bottom: 10px solid #fafafa ;
+  border-right: 8px solid #fafafa ;
+  
 }
 /* End Select Section Page  */
