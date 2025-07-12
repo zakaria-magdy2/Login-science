@@ -155,7 +155,6 @@ const dataScientificMath = {
         "#60a5fa",
         "#fda4af",
       ],
-      borderRadius: 8,
     },
   ],
 };
@@ -195,7 +194,6 @@ const dataScientificBio = {
         "#fda4af",
         "#60a5fa",
       ],
-      borderRadius: 8,
     },
   ],
 };
