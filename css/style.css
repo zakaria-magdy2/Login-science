@@ -346,11 +346,11 @@ ul#sortableList {
 
 ul#sortableList li {
   padding: 0px 10px;
-  margin: 10px 0;
+  margin: 15px 0;
   cursor: grab;
-  border: 1px solid #e4e4e4; /* لاحظ إصلاح السطر */
+  border: 1px solid #e4e4e4;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -447,7 +447,7 @@ ul#sortableList li:hover {
 }
 /* End Select Section Page  */
 
-/* Start Admin Page  */
+/* Start All Admin Page  */
 .container-admin {
   position: relative;
 }
@@ -716,5 +716,150 @@ canvas {
   width: 100% !important;
   height: 400px !important;
 }
+/* End All Admin Page  */
 
-/* End Admin Page  */
+/* Start One Student  */
+.content-student {
+  background-color: #f5f6fa;
+  padding-top: 120px;
+  width: calc(100% - 220px);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.content-student form {
+  position: relative;
+}
+.content-student .search-student {
+  width: 700px;
+  height: 70px;
+  text-align: right;
+  line-height: 2px;
+  padding: 20px 85px;
+  font-size: 20px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.content-student form img {
+  position: absolute;
+  top: 25%;
+  right: 30px;
+  cursor: pointer;
+}
+.content-student .search-student:focus {
+  outline: none;
+}
+.content-student .data {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 14px;
+  padding: 15px 40px;
+  margin: 20px 40px;
+  font-size: 24px;
+  width: 700px;
+  text-align: right;
+}
+.content-student .data .name {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.content-student .data .info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+.content-student .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 700px;
+}
+.content-student .buttons > div {
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  padding: 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.content-student .buttons > div.control {
+  padding: 0px !important;
+}
+.content-student .buttons > div .open {
+  border-radius: 18px;
+  background-color: #87ff87;
+  padding: 20px;
+  transition: 0.3s;
+}
+.content-student .buttons > div .close {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 18px;
+  transition: 0.3s;
+}
+.content-student .buttons > div img {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
+
+.desires {
+  margin: 20px;
+  text-align: right;
+  width: 97%;
+  border-collapse: collapse;
+  direction: rtl;
+  font-family: Arial, sans-serif;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.desires thead {
+  font-weight: bold;
+}
+
+.desires th {
+  padding: 10px;
+  font-size: 32px;
+}
+.desires td {
+  border-top: 1px solid #ddd;
+  font-size: 32px;
+  padding: 10px;
+}
+#wish-table td:nth-child(2) {
+  border-left: 2px solid #ddd; /* لون وخط البوردر */
+}
+.desires tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+.upDate {
+  display: none;
+  width: 97%;
+  font-size: 23px;
+  padding: 20px 200px;
+  margin-top: 20px;
+}
+.content-student .submit-sections {
+  padding: 10px 190px;
+  font-size: 24px;
+  border-radius: 10px;
+  display: block;
+  margin: 15px auto;
+  background: linear-gradient(to right, #21a3ff, #146299);
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.content-student .submit-sections:hover {
+  background: linear-gradient(to right, #ffd900, #a80a0a);
+}
+
+/* End One Student  */
